@@ -1,0 +1,29 @@
+{
+  "name": "playground",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "DEBUG=vite-plugin-prebundle-src vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest"
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "vite@5.0.11": "patches/vite@5.0.11.patch"
+    }
+  },
+  "dependencies": {
+    "vue": "^3.3.8"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.5.0",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "sass": "^1.69.5",
+    "tailwindcss": "^3.3.5",
+    "vite": "5.0.11",
+    "vitest": "^0.34.6"
+  }
+}
