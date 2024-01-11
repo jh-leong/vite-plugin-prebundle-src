@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-prebundle-src",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "📦 Vite plugin to prebundle source files",
   "keywords": [
     "vite",
