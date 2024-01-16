@@ -38,9 +38,11 @@ export default function prebundleSrc(
       _config.optimizeDeps = optimizeDeps;
     },
     configureServer(server) {
+      const info = server.config.logger.info;
+
       server.watcher.on('change', (file) => {
         if (depsSet.has(normalizePath(file))) {
-          debug(`file '${file}' changed, reload server`);
+          info(`[${NAME}] file '${file}' changed, reload server`);
           server.restart(true);
         }
       });
